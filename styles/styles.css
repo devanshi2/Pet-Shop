@@ -159,7 +159,7 @@ footer{
   background-color:chocolate;
   width:100%;
   height:52vh;
-  margin-top: -27px;
+  margin-top: -5px;
   justify-content: center;
 }
 
@@ -208,6 +208,8 @@ footer p{
 /*Contact page*/
 .wrapper{
   display: flex;
+  height:820px;
+  /*background-color: aliceblue;*/
 }
 .info{
   margin:85px 20px;
@@ -215,13 +217,77 @@ footer p{
   width: 50%;
   flex-basis: 60%;
 }
-.info h2,.info p{
+.info h2{
   text-align: center;
-  
+  font-family: Garamond;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: teal;
+  font-size: 2.5rem;
+  text-shadow:1px 1px turquoise;
+}
+.info p{
+  text-align: center;
+  font-family: Garamond;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+form{
+  background-image: linear-gradient(to right,lightblue,azure,lightblue);
+  margin-top: 100px;
+  border:4px groove aliceblue;
+  padding: 10px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  border: 2px solid azure;
+  border-radius: 10px;
+ margin: 20px;
+ padding: 5px;
+ width: 200px;
+ height: 30px;
+}
+#p{
+  display: inline-block;
+  padding-top: 20px;
+  vertical-align:top;
+}
+textarea{
+  border: 2px solid azure;
+  border-radius: 10px;
+ margin: 20px 20px 2px 20px;
+ padding: 5px;
+ width: 175px;
+ height: 50px;
+ display: inline-block;
+}
+
+#submit{
+  background-color: teal;
+  border:3px solid #000000;
+  color: #000000;
+  margin:20px 110px;
+  padding: 5px;
+  width: 150px;
+  font-weight: bold;
+}
+#submit:hover{
+  background-image: linear-gradient(to right,lightblue,azure,lightblue);
+  color: teal;
+}
+
+hr{
+  width:500px;
+  margin-top: 0;
+  border-radius: 100px;
+  border:2px solid lightslategray;
+  animation: animate 4s linear;
 }
 .follow{
   font-family: 'lucida handwriting';
-  color:chocolate;
   margin:85px 20px;
   padding: 50px;
   flex-basis: 60%;
@@ -229,15 +295,67 @@ footer p{
   align-items: center;
 }
 
+.follow h2{
+  color:chocolate;
+  text-shadow: 2px 1px burlywood;
+  font-size: 2.5rem;
+}
 .follow .fa {
   padding: 15px;
   width: 20px;
   height:20px;
-  margin:5px 8px;
+  margin:20px 8px;
   text-align: center;
   display: inline-block;
   text-decoration: none;
   border-radius: 100%;
   background-color: darkgray;
   color: #ffffff;
+}
+
+#site{
+  margin-left:60px;
+  margin-top:-150px;
+  color:darkgray;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 20px;  
+}
+
+.call{
+  background-image: linear-gradient(to right,lightyellow,antiquewhite,lightyellow) ;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  box-sizing: border-box;
+}
+.call h2{
+  text-align: center;
+  padding:50px;
+  font-family: Garamond;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: crimson;
+  font-size: 2.5rem;
+  text-shadow:2px 1px lightsalmon;
+  background-color: ;
+}
+.call .fa-map-marker{
+  padding:20px 440px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.call .fa-phone{
+  padding:20px 490px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.call .fa-envelope{
+  padding:20px 490px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000000;
 }
